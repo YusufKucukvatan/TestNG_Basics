@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Loan Department">
+    <parameter name="URL" value="suite.com"/>
+    <parameter name="Username" value="user123"/>
+    <parameter name="Password" value="1234567"/>
+    <test name="Smoke">
+        <groups>
+            <run>
+                <include name="Smoke"/>
+                <exclude name="Regression"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="Tests"/>
+            <package name="Tests2"/>
+        </packages>
+    </test>
+</suite>

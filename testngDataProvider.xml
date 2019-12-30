@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Loan Department">
+    <parameter name="URL" value="suite.com"/>
+    <parameter name="username" value="userSuite"/>
+    <parameter name="password" value="Suite12345"/>
+    <test name="Loan Test-1">
+        <parameter name="URL" value="test.com"/>
+        <parameter name="username" value="userTest"/>
+        <parameter name="password" value="Test12345"/>
+        <classes>
+            <class name="Tests3.Day9">
+                <parameter name="URL" value="day9.com"/>
+                <parameter name="username" value="user9"/>
+                <parameter name="password" value="9999999"/>
+            </class>
+            <class name="Tests3.Day10">
+                <parameter name="URL" value="day10.com"/>
+                <parameter name="username" value="user10"/>
+                <parameter name="password" value="10101010"/>
+            </class>
+            <class name="Tests3.Day11">
+                <methods>
+                    <exclude name="mobile.*"/>
+                </methods>
+            </class>
+            <class name="Tests3.Day12">
+                <parameter name="URL" value="day12.com"/>
+            </class>
+        </classes>
+    </test>
+</suite>

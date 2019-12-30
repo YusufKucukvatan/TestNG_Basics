@@ -1,0 +1,17 @@
+<suite name="Loan Department">
+    <parameter name="URL" value="suite.com"/>
+    <parameter name="Username" value="user123"/>
+    <parameter name="Password" value="1234567"/>
+   <test name="Loan">
+        <classes>
+            <class name="Tests.Day1"/>
+            <class name="Tests.Day2"/>
+            <class name="Tests.Day3"/>
+            <class name="Tests.Day4"/>
+            <class name="Tests2.Day5"/>
+            <class name="Tests2.Day6"/>
+            <class name="Tests2.Day7"/>
+            <class name="Tests2.Day8"/>
+        </classes>
+   </test>
+</suite>
